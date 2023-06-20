@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat-app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respo.css">
+</head>
+<body>
+    
+
+        <div class="person-selector">
+
+            <button class=" button person-selector-button active-person" id="fatai-selector">Fatai</button> 
+            <button class=" button person-selector-button"  id="Michael-selector" >Michael</button> 
+        
+        </div>
+
+         
+        <!-- chat- containe div-->
+        <div class=" chat-container">
+
+            <h2 class="chat-header">Fatai Chatting...</h2>
+                 
+            <!-- chat- messages div-->
+                <div class="chat-messages">
+
+                        <!-- Fatai chat div-->
+                        <div class="message blue-bg">
+                            <div class="message-sender"> Fatai</div>
+                            <div class="message-text"> hey Mk, what's up na</div>
+                            <div class="message-time"> 10:30 AM</div>
+                        </div>
+
+                        <!-- Michael chat div-->
+                        <div class="message gray-bg">
+                            <div class="message-sender"> Michael</div>
+                            <div class="message-text"> i'm good bro. how are you doing?</div>
+                            <div class="message-time"> 10:35 AM</div>
+                        </div>
+                </div>
+
+                <form class="chat-input-form" >
+                    <input type="text" class="chat-input" required placeholder="Type here, Fatai.."/>
+                    <button type="submit" class="button send-button">Send</button>  
+                </form>
+
+                <button class="button clear-chat-button">Clear Chat</button>
+        </div>
+        
+        <script src="app.js"></script>
+
+</body>
+</html>
